@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_artis:
                         bukaFragment(new ArtisFragment());
                         getSupportActionBar().setTitle("Artis");
-                        return true
+                        return true;
                 }
                 return false;
             }
@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView(){
+        bukaFragment(new MusikFragment());
+        getSupportActionBar().setTitle("Musik");
+
         bnvMusikKita = findViewById(R.id.bnv_musik_kita);
         flContainer = findViewById(R.id.fl_container);
     }
